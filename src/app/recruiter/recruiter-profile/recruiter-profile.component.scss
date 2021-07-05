@@ -1,0 +1,41 @@
+.profile-info{
+    box-shadow: 2px 3px lightgrey;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+}
+.user-info{
+    font-size: large;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.job-title{
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+.job-description{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px lightgrey;
+    background-color: lightcoral;
+}
+
+.candidate-description{
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 5px lightgrey;
+    background-color: lightblue;
+}

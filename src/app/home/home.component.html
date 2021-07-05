@@ -1,0 +1,12 @@
+<div>
+    <div *ngFor="let job of jobs">
+        <div class="job-description">
+            <span class="job-title"> {{job.title}} </span>
+            <span>Experience : {{job.experience}}</span>
+        </div>
+        <div style="position: relative;height: 50px;">
+            <button *ngIf="!hasAppliedToJob(job.id)" (click)="applyForJob(job.id)" mat-button style="background-color: #f26323;color: white;position: absolute;right: 10px;">Apply for job</button>
+            <span *ngIf="hasAppliedToJob(job.id)" style="font-size: large;font-weight: bold;position: absolute;right: 10px;">Applied</span>
+        </div>
+    </div>
+</div>

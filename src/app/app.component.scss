@@ -1,0 +1,45 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: lightblue;
+    align-items: center;
+}
+
+
+.search-form{
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type=text]{
+    float: left;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 70%;
+}
+
+.search-form button{
+    margin-left: 5px;
+    width: auto;
+    background-color: #f26323;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+.link-style{
+    font-size: large;
+    font-weight: 500;
+    margin-right: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.link-style:hover{
+    color: #f26323;
+    text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+<mat-card style="width: 50%;margin: auto;margin-top: 20px;">
+    <form [formGroup]="jobForm" style="display: flex;flex-direction: column;"  (ngSubmit)="onSubmit()" >
+        <mat-form-field>
+            <input type="text" placeholder="title" matInput formControlName="title"> 
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" placeholder="experience required" matInput formControlName="experience">
+        </mat-form-field>
+        <button style="width: 150px;margin: auto;" mat-raised-button color="primary" type="submit" >Add New Job</button>
+    </form>
+</mat-card>

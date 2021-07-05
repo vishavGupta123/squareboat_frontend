@@ -1,0 +1,13 @@
+<div class="profile-info">
+    <span style="font-size: large;font-weight: bold;">Candidate profile</span>
+    <span class="user-info"> Name: {{user.name}} </span>
+    <span class="user-info"> College: {{user.college}}</span>
+    <span class="user-info">Email:  {{user.email}} </span>
+    <h2>Jobs Applied</h2>
+    <div *ngFor="let job of user.jobs">
+        <div class="job-description">
+            <span class="job-title"> {{job.title}} </span>
+            <span>Experience : {{job.experience}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<div  class="profile-info" *ngIf="recruiter">
+    <span style="font-size: large;font-weight: bold;">Recruiter profile</span>
+    <span class="user-info"> Contact Person: {{recruiter.contact_person}} </span>
+    <span class="user-info"> Company Name: {{recruiter.company_name}}</span>
+    <span class="user-info">Email:  {{recruiter.email}} </span>
+    <h2>Jobs Posted</h2>
+    <div *ngFor="let job of recruiter.jobs">
+        <div class="job-description">
+            <span class="job-title"> {{job.title}} </span>
+            <span>Experience : {{job.experience}}</span>
+            <div style="position: relative;height: 50px;">
+                <button (click)="fetchCandidatesForJob(job.id)" style="position: absolute;right: 10px;" mat-raised-button color="primary" >
+                    List of candidates
+                </button>
+            </div>
+            <div *ngIf="candidates.length>0 && selectedJobId == job.id">
+                <div *ngFor="let candidate of candidates">
+                    <div class="candidate-description">
+                        <span class="candidate-title"> {{candidate.name}} </span>
+                        <span >College:{{candidate.college}}</span>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <button mat-raised-button color="primary" style="width: 150px;margin-top: 10px;" (click)="addNewJob()">Add New Job</button>
+</div>
+
+
